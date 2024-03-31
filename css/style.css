@@ -1,0 +1,256 @@
+@charset "UTF-8";
+
+h1 {
+    
+    color: #31355D;
+    font-size: 300px; 
+    font-family: salbabida-sans-pro, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    position: relative;
+        top: -150px; 
+        width: 100%;
+            line-height: 300px;
+        
+}
+nav ul li a {
+  text-decoration: none; /* 下線を削除 */
+  color: #31355D; /* リンクのテキスト色 */
+}
+
+nav ul li a:hover {
+  color: #000; /* ホバー時のリンクのテキスト色 */
+}
+
+nav ul {
+    display: flex;
+    gap: 40px;
+    justify-content: end;
+    width: 95%;
+    color: #31355D;
+        margin-top: -80px;
+        
+}
+
+ul > li {
+        list-style: none;
+        display: inline;
+}
+
+.about {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+h2 {
+    font-size: 100px;
+    color: #FFFFFF;
+    font-family: heisei-maru-gothic-std, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    margin-right: 700px;
+        position: relative;
+        top: -300px; }
+
+
+.text-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+p {
+    font-size: 18px;
+    word-wrap: break-word;
+    font-family: heisei-maru-gothic-std, sans-serif;
+    line-height: 5;
+        margin-top: -300px; /* マイナス値で上方向に移動 */
+        }
+
+        .btntextchange{
+            /*テキストの基点とするためrelativeを指定*/
+          position: relative;
+            /*ボタンの形状*/
+          border-radius:40px;
+            min-width:150px;
+          padding: 30px;
+            text-align: center;
+          display: inline-block;
+            text-decoration: none;
+            color: #333;
+            outline: none;
+            /*アニメーションの指定*/
+            transition: all .2s;
+            background: #ffffff;
+        }
+        
+        /*hoverした際の変化*/
+        .btntextchange:hover{
+          background:#ffff;
+          color:#333;
+        }
+        
+        .btntextchange span{
+            /*絶対配置でテキストの位置を決める*/
+          position: absolute;
+          left: 50%;
+          top:50%;
+            transform:translate(-50%,-50%);
+            /*アニメーションの指定*/
+            transition: all .5s;
+          /*ブロック要素にしてテキスト折り返しなし*/  
+          display: block;
+          white-space: nowrap;
+        }
+        
+        /*差し替わるテキストの設定*/
+        .btntextchange span:nth-child(2){
+          opacity:0;/*透過0に*/
+        }
+        
+        /*hoverするとテキストが入れ替わる設定*/
+        .btntextchange:hover span:nth-child(1){
+          opacity:0;/*透過0に*/
+        }
+        
+        .btntextchange:hover span:nth-child(2){
+          opacity:1;/*不透明に*/
+        }
+        
+        /*========= レイアウトのためのCSS ===============*/
+        
+        body{
+            vertical-align:middle; 
+            padding: 100px 0 ;
+            text-align: center;
+        }
+        
+        h3 {
+            position: absolute; /* 絶対位置指定 */
+            top: 460%; /* 適切な位置に調整 */
+            left: 80%; /* 画面の中央に配置 */
+            transform: translateX(-50%); /* 中央揃え */
+            font-family: heisei-maru-gothic-std, sans-serif;
+            font-size: 100px;
+            color: #31355D;
+        }
+        
+        img {
+            margin-bottom: 150px; /* 下側に20pxのマージンを追加 */
+        }
+        .image-container {
+          display: inline-block; /* 画像を横並びに配置するため */
+          margin: 10px; /* 画像の間に余白を設定 */
+      }
+     
+      .yajirushi1 {
+        position: absolute;
+        top: 650px; /* 上から100pxの位置 */
+        left: 50px; /* 左から50pxの位置 */
+    }
+    
+    .yajirushi2 {
+        position: absolute;
+        top: 650px; /* 上から150pxの位置 */
+        left: 950px; /* 左から200pxの位置 */
+    }
+    
+    .rocket-icon {
+      width: 50%;
+      height: auto;
+  }
+  .button {
+    width: 500px;
+    height: 90px;
+    border-radius: 10px; /* 角丸の半径 */
+    background-color: #31355D; /* 背景色 */
+    color: #ffff;
+}
+.my-parts {
+  border-radius: 40px; /* 丸みを強くする */
+  background-color: #31355D;
+  color: #fff;
+  font-size: 50px;
+  display: inline-block;
+  padding: .2em 2em;
+  margin: 0 0 1em;
+  cursor: pointer;
+  box-shadow: 1px 1px 3px 0 rgba(0,0,0,.2);
+}
+.footer-container {
+  position: relative;
+  text-align: center; /* テキストを中央寄せにする */
+}
+
+.footer-container img {
+  width: 100%;
+  height: auto;
+}
+
+.footer-nav {
+  position: absolute;
+  top: 0; /* 画像の上端に配置 */
+  left: 0;
+  width: 100%;
+  list-style-type: none; /* リストマーカーをなくす */
+  padding: 0; /* パディングをリセット */
+  margin: 0; /* マージンをリセット */
+  display: flex;
+  justify-content: center; /* メニューアイテムを中央寄せ */
+  align-items: center; /* アイテムを垂直中央揃え */
+  height: 100px;
+  /* ナビゲーションバーの高さを設定 */
+}
+
+.footer-nav li {
+  margin: 0 15px; /* メニューアイテム間のスペース */
+  font-size: 18px; 
+}
+
+.footer-nav a {
+  color: #fff; /* リンクの色 */
+  text-decoration: none; /* 下線を消す */
+  font-size: 18px; /* フォントサイズを調整 */
+}
+
+.footer-nav img.instagram-icon {
+  width: 15px;
+  height: 15px;
+  
+}
+.example3 {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-decoration: none;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: #31355D;
+  color: #FFF;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.example3 {
+  position: fixed; /* またはabsolute, 画面に固定する場合はfixedを使用 */
+  right: 10px; /* 右端から0pxの位置 */
+  bottom: 20px; /* 下端から20pxの位置に配置（必要に応じて調整） */
+}
+
+.example3 .top-page-icon {
+  margin-bottom: 10px; /* アイコンとテキストの間隔 */
+  width: 65px; /* アイコンのサイズ */
+  height: auto;
+}
+
