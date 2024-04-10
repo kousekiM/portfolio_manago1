@@ -396,13 +396,15 @@ ul > li {
 
 .about h2 {
   position: relative;
-  top: 0;
+  top: 0%;
   margin-right: 700px;
   color: #ffffff;
   font-style: normal;
   font-weight: 400;
   font-size: 100px;
   font-family: heisei-maru-gothic-std, sans-serif;
+  margin-top: -100px;
+
 }
 
 .text-overlay {
