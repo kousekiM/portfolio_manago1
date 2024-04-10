@@ -57,4 +57,14 @@ $(function () {
     prevArrow: '<button type="button" class="slick-prev"></button>',
     nextArrow: '<button type="button" class="slick-next"></button>',
   });
+
+  // ハンバーガーメニュー
+  $(".sp_menu_btn,.sp_nav a").click(function () {
+    $(".sp_nav").fadeToggle();
+    $(".sp_menu_btn").toggleClass("open");
+  });
+
+  $(window).on("load", function () {
+    AOS.refresh();
+  });
 });

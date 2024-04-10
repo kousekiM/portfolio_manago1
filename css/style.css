@@ -992,7 +992,6 @@ footer {
     font-size: 14px;
   }
 }
-
 /* skill */
 .about-skill {
   max-width: 1000px;
@@ -1149,6 +1148,11 @@ footer {
   left: 10%;
   animation: floating-y 3s ease-in-out infinite alternate-reverse;
 }
+.works-page .works__item:nth-child(5) {
+  top: 80%;
+  right: 10%;
+  animation: floating-y 3s ease-in-out infinite alternate-reverse;
+}
 .works-page .btntextchange {
   bottom: 300px;
 }
@@ -1183,243 +1187,258 @@ footer {
   .works-page .btntextchange {
     bottom: 150px;
   }
+
+/* 横並び */
+
+.flex {
+  display: flex; /*横並び*/
 }
-
-/* ===== contactページ ===== */
-
-@media screen and (max-width: 767px) {
+.flex .image {
+  width: 640px; /*画像サイズ指定*/
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+}
+.flex .text {
+  margin: 0 0 0 20px;
+  padding: 0;
+}
+.work_banner p{
+  line-height: 45px
+}
+}
+h2{
+  font-size: 100px;
+  color: #31355d;
+  font-family: heisei-maru-gothic-std, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  line-height: 300px;
+}
+.process_work p1{
+  font-size: 36px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  line-height: 3;
+}
+.process_work p2{
+  font-size: 16px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  line-height: 5;}
   
-}
-
-nav {
-    text-align: right; /* メニューを右寄せにするための補助的な設定（フレックスボックスを使用する場合は不要かもしれません） */
-}
-
-/* ナビゲーションメニューのスタイル */
-nav ul {
-    display: flex; /* メニュー項目を横並びにする */
-    justify-content: flex-end; /* メニュー項目を右寄せにする */
-    gap: 20px; /* メニュー項目間の間隔 */
-    padding: 0; /* デフォルトのパディングをリセット */
-    list-style: none; /* 箇条書きのマーカーを非表示にする */
-    margin-right: 20px; /* 右端からの余白 */
-}
-
-nav ul li {
-    display: inline; /* メニュー項目を横並びにする（flexコンテナ内では自動的に行われるため、この設定は不要かもしれません） */
-}
-
-nav ul li a {
-    text-decoration: none; /* リンクの下線を削除する */
-    color: #31355D; /* リンクのテキスト色 */
-    padding: 10px; /* リンクのパディングを設定し、クリックしやすくする */
-}
-
-h1{
-    font-size: 100px;
-    color:#31355D;
-    font-family: heisei-maru-gothic-std, sans-serif;
-    font-style: normal;
-    font-weight: 400;
-     justify-content: center; /* 横方向の中央揃え */
+/* ===== contactページ ===== */
+h1 {
+  font-size: 100px;
+  color: #31355d;
+  font-family: heisei-maru-gothic-std, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  justify-content: center; /* 横方向の中央揃え */
   align-items: center; /* 縦方向の中央揃え */
-    
 }
-p{
-    text-align: center;
+p {
+  text-align: center;
 }
 label {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
-  
-  label:not(:last-child) {
-    margin-bottom: 30px;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+label:not(:last-child) {
+  margin-bottom: 30px;
+}
+.Form {
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 720px;
+  padding: 0 3%;
+}
+@media screen and (max-width: 480px) {
   .Form {
-    margin-top: 80px;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 720px;
+    margin-top: 40px;
   }
-  @media screen and (max-width: 480px) {
-    .Form {
-      margin-top: 40px;
-    }
-  }
+}
+.Form-Item {
+  border-top: 1px solid #ddd;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  width: 100%;
+}
+@media screen and (max-width: 480px) {
   .Form-Item {
-    border-top: 1px solid #ddd;
-    padding-top: 24px;
-    padding-bottom: 24px;
-    width: 100%;
-    display: flex;
-    align-items: center;display: flex; /* ラベルと入力欄を横に配置 */
-    flex-direction: column; /* 垂直方向に配置 */
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    flex-wrap: wrap;
   }
-  @media screen and (max-width: 480px) {
-    .Form-Item {
-      padding-left: 14px;
-      padding-right: 14px;
-      padding-top: 16px;
-      padding-bottom: 16px;
-      flex-wrap: wrap;
-    }
-  }
-  .Form-Item:nth-child(5) {
-    border-bottom: 1px solid #ddd;
-  }
+}
+.Form-Item:nth-child(5) {
+  border-bottom: 1px solid #ddd;
+}
+.Form-Item-Label {
+  width: 100%;
+  max-width: 1000px;
+  letter-spacing: 0.05em;
+  font-weight: bold;
+  font-size: 18px;
+  color: #31355d;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 480px) {
   .Form-Item-Label {
-    width: 100%;
-    max-width: 248px;
-    letter-spacing: 0.05em;
-    font-weight: bold;
-    font-size: 18px;
-    color: #31355D;
+    max-width: inherit;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
   }
-  @media screen and (max-width: 480px) {
-    .Form-Item-Label {
-      max-width: inherit;
-      display: flex;
-      align-items: center;
-      font-size: 15px;
-    }
-  }
+}
+.Form-Item-Label.isMsg {
+  margin-top: 8px;
+  margin-bottom: auto;
+}
+@media screen and (max-width: 480px) {
   .Form-Item-Label.isMsg {
-    margin-top: 8px;
-    margin-bottom: auto;
+    margin-top: 0;
   }
-  @media screen and (max-width: 480px) {
-    .Form-Item-Label.isMsg {
-      margin-top: 0;
-    }
-  }
+}
 
-  @media screen and (max-width: 480px) {
-    .Form-Item-Label-Required {
-      border-radius: 4px;
-      padding-top: 4px;
-      padding-bottom: 4px;
-      width: 32px;
-      font-size: 10px;
-    }
+@media screen and (max-width: 480px) {
+  .Form-Item-Label-Required {
+    border-radius: 4px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    width: 32px;
+    font-size: 10px;
   }
+}
+.Form-Item-Input {
+  display: block;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  padding-left: 1em;
+  padding-right: 1em;
+  height: 48px;
+  flex: 1;
+  width: 100%;
+  background: #eaedf2;
+  font-size: 18px;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 480px) {
   .Form-Item-Input {
-    border: 1px solid #ddd;
-    border-radius: 20px;
-    margin-left: 40px;
-    padding-left: 1em;
-    padding-right: 1em;
-    height: 48px;
-    flex: 1;
-    width: 100%;
-    max-width: 410px;
-    background: #eaedf2;
-    font-size: 18px;
+    margin-left: 0;
+    margin-top: 18px;
+    height: 40px;
+    flex: inherit;
+    font-size: 15px;
   }
-  @media screen and (max-width: 480px) {
-    .Form-Item-Input {
-      margin-left: 0;
-      margin-top: 18px;
-      height: 40px;
-      flex: inherit;
-      font-size: 15px;
-    }
-  }
+}
+.Form-Item-Textarea {
+  display: block;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  padding-left: 1em;
+  padding-right: 1em;
+  height: 216px;
+  flex: 1;
+  width: 100%;
+  background: #eaedf2;
+  font-size: 18px;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 480px) {
   .Form-Item-Textarea {
-    border: 1px solid #ddd;
-    border-radius: 20px;
-    margin-left: 40px;
-    padding-left: 1em;
-    padding-right: 1em;
-    height: 216px;
-    flex: 1;
-    width: 100%;
-    max-width: 410px;
-    background: #eaedf2;
-    font-size: 18px;
+    margin-top: 18px;
+    margin-left: 0;
+    height: 2s00px;
+    flex: inherit;
+    font-size: 15px;
   }
-  @media screen and (max-width: 480px) {
-    .Form-Item-Textarea {
-      margin-top: 18px;
-      margin-left: 0;
-      height: 2s00px;
-      flex: inherit;
-      font-size: 15px;
-    }
-  }
+}
+.Form-Btn {
+  border-radius: 25px;
+  margin-top: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 200px;
+  display: block;
+  letter-spacing: 0.05em;
+  background: #31355d;
+  color: #fff;
+  font-weight: bold;
+  font-size: 24px;
+}
+@media screen and (max-width: 480px) {
   .Form-Btn {
-    border-radius: 25px;
-    margin-top: 32px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    width: 200px;
-    display: block;
-    letter-spacing: 0.05em;
-    background: #31355D;
-    color: #fff;
-    font-weight: bold;
-    font-size: 24px;
+    margin-top: 24px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 160px;
+    font-size: 16px;
   }
-  @media screen and (max-width: 480px) {
-    .Form-Btn {
-      margin-top: 24px;
-      padding-top: 8px;
-      padding-bottom: 8px;
-      width: 160px;
-      font-size: 16px;
-    }
-  }
-  .footer-container {
-    position: relative;
-    text-align: center; /* テキストを中央寄せにする */
-  }
-  
-  .footer-container img {
-    width: 100%;
-    height: auto;
-  }
-
-
-/* ===== thank youページ ===== */
+}
 
 @media screen and (max-width: 767px) {
-  
-}
-  
-nav {
-  text-align: right; /* メニューを右寄せにするための補助的な設定（フレックスボックスを使用する場合は不要かもしれません） */
+  .contact-form h1 {
+    font-size: 50px;
+    margin: 50px auto;
+  }
 }
 
-h4{
+/* ===== thank youページ ===== */
+.thanks_nav-item a {
+  color: #fff;
+}
+.thanks-sp_menu_btn span,
+.thanks-sp_menu_btn span::before,
+.thanks-sp_menu_btn span::after {
+  background-color: #fff;
+}
+.open.thanks-sp_menu_btn span {
+  background-color: transparent;
+}
+.open.thanks-sp_menu_btn span::before,
+.open.thanks-sp_menu_btn span::after {
+  background-color: #2a2a2a;
+}
+h4 {
   font-size: 100px;
-  color:#F8F8F9;
+  color: #f8f8f9;
   font-family: heisei-maru-gothic-std, sans-serif;
   font-style: normal;
   justify-content: center; /* 横方向の中央揃え */
   align-items: center; /* 縦方向の中央揃え */
-  
 }
 
 .button {
-   /*コレ*/border: 3px solid #fff;
-    /*コレ*/border-radius: 50px;
-    width: 200px;
-    height: 50px;
-    padding: 10px;
-    box-sizing: border-box;
-    color: #fff;
-    text-decoration: none;
-    text-align: center;
-    margin: 10px 0;
-    background-color: #5E6181;
+  /*コレ*/
+  border: 3px solid #fff;
+  /*コレ*/
+  border-radius: 50px;
+  width: 200px;
+  height: 50px;
+  padding: 10px;
+  box-sizing: border-box;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  margin: 10px 0;
+  background-color: #5e6181;
 }
 
-
-.example{
-  /*コレ*/border: 1px solid #333;
+.example {
+  /*コレ*/
+  border: 1px solid #333;
   padding: 10px 30px;
   background: #e4fdff;
-  cursor: pointer;}
+  cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+}
