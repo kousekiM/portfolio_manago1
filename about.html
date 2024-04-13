@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>about</title>
+    <title>works</title>
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="https://use.typekit.net/utb4fgs.css" />
@@ -12,12 +12,36 @@
       src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"
     ></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- slickのJavaScript -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
     <!-- JS読み込み -->
     <script src="./js/script.js"></script>
   </head>
   <body bgcolor="#DFDFE6">
     <header id="header">
-      <nav>
+      <nav class="pc_nav">
+        <ul>
+          <li><a href="./index.html">HOME</a></li>
+          <li><a href="./about.html">ABOUT</a></li>
+          <li><a href="./works.html">WORKS</a></li>
+          <li><a href="./contact.html">CONTACT</a></li>
+          <li>
+            <a
+              href="https://www.instagram.com/_____mng_____design?igsh=MTVidGJ3b21teTh2Zg%3D%3D&utm_source=qr"
+              ><img
+                src="./img/Instagram_Glyph_Black.png"
+                width="13px"
+                height="13px"
+                alt="Instagram"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+      <div class="sp_menu_btn"><span></span></div>
+      <nav class="sp_nav">
         <ul>
           <li><a href="./index.html">HOME</a></li>
           <li><a href="./about.html">ABOUT</a></li>
@@ -36,6 +60,7 @@
         </ul>
       </nav>
     </header>
+
     <section class="about-profile">
       <h1>about
       </h1>
@@ -148,10 +173,12 @@
         </ul>
       </div>
     </section>
-
     <footer>
       <div class="footer-container">
-        <img src="./img/footer.png" alt="Footer" />
+        <picture>
+          <source srcset="./img/footer-bf-sp.png" media="(max-width: 767px)" />
+          <img src="./img/footer.png" alt="Footer" />
+        </picture>
         <ul class="footer-nav">
           <li><a href="./index.html">HOME</a></li>
           <li><a href="./about.html">ABOUT</a></li>

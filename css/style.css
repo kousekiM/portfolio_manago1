@@ -806,13 +806,13 @@ footer {
 }
 .about-profile .about__text-name {
   margin-bottom: 28px;
-  color: #000000;
+  color: #31355d;
   font-size: 45px;
   line-height: 1.73;
 }
 .about-profile .about__text-hobby {
   margin-bottom: 25px;
-  color: #000000;
+  color: #31355d;
   font-size: 26px;
   line-height: 1.73;
 }
@@ -820,6 +820,7 @@ footer {
   margin-bottom: 60px;
   font-size: 16px;
   line-height: 1.75;
+  color: #31355d;
 }
 @media screen and (max-width: 767px) {
   .about-profile h1 {
@@ -1107,7 +1108,9 @@ footer {
   .about-skill .design-img img {
     padding: 20px 0;
   }
-}
+  .skill__item-detail img{
+    width: 50px;
+  }
 
 /* ===== worksページ ===== */
 .works-page {
@@ -1159,6 +1162,46 @@ footer {
   bottom: 300px;
 }
 
+h1{
+  font-size: 100px;
+  color: #31355d;
+  font-family: heisei-maru-gothic-std, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  line-height: 300px;
+}
+
+h2{
+  font-size: 100px;
+  color: #31355d;
+  font-family: heisei-maru-gothic-std, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  line-height: 300px;
+}
+
+.process_work p1{
+  font-size: 36px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  line-height: 3;
+  color: #31355d;
+  font-weight: bold;
+}
+.process_work p2{
+  font-size: 16px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  line-height: 5;
+  color: #31355d;
+  font-weight: bold;
+}
+.work_banner img {
+  width: 80%;
+  height: auto; /* 高さを自動調整してアスペクト比を保持 */
+  text-align: center;
+}
+
 @media screen and (max-width: 767px) {
   .works-page h1 {
     font-size: 50px;
@@ -1183,7 +1226,8 @@ footer {
   .works-page .works__item:first-child,
   .works-page .works__item:nth-child(2),
   .works-page .works__item:nth-child(3),
-  .works-page .works__item:nth-child(4) {
+  .works-page .works__item:nth-child(4), 
+  .works-page .works__item:nth-child(5) {
     animation: none;
   }
   .works-page .btntextchange {
@@ -1209,9 +1253,9 @@ footer {
 .work_banner p{
   line-height: 45px
 }
-}
+
 h2{
-  font-size: 100px;
+  font-size: 60px;
   color: #31355d;
   font-family: heisei-maru-gothic-std, sans-serif;
   font-style: normal;
@@ -1219,15 +1263,28 @@ h2{
   text-align: center;
   line-height: 300px;
 }
+
 .process_work p1{
   font-size: 36px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   line-height: 3;
+  color: #31355d;
+  font-weight: bold;
 }
 .process_work p2{
   font-size: 16px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  line-height: 5;}
+  line-height: 5;
+  color: #31355d;
+  font-weight: bold;
+}
+.work_banner img {
+  width: 80%;
+  height: auto; /* 高さを自動調整してアスペクト比を保持 */
+}
+
+
+
   
 /* ===== contactページ ===== */
 h1 {
@@ -1239,6 +1296,13 @@ h1 {
   justify-content: center; /* 横方向の中央揃え */
   align-items: center; /* 縦方向の中央揃え */
 }
+/* 画面幅が768px以下の場合 */
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 60px; /* フォントサイズを60pxに変更 */
+  }
+}
+
 p {
   text-align: center;
 }
@@ -1443,4 +1507,5 @@ h4 {
 }
 
 @media screen and (max-width: 767px) {
+}
 }
