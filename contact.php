@@ -1,6 +1,6 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $to = "kusk5274@icloud.com"; // 自分のメールアドレスを入力
+    $to = "mana.kou0504@gmail.com"; // 自分のメールアドレスを入力
     $name = $_POST["name"];
     $phone = $_POST["phone"];
     $from = $_POST["email"];
