@@ -403,8 +403,7 @@ ul > li {
   font-weight: 400;
   font-size: 100px;
   font-family: heisei-maru-gothic-std, sans-serif;
-  margin-top: -100px;
-
+  margin-top: -20%;
 }
 
 .text-overlay {
@@ -495,7 +494,7 @@ ul > li {
     font-size: 50px;
     margin-right: 0;
     text-align: left;
-    top: 100px;
+    
   }
   .text-overlay {
     height: 621px;
@@ -960,8 +959,9 @@ footer {
   }
   .about-strength h1 {
     font-size: 27px;
-    top: -150px;
+    top: -8%;
     padding-left: 16px;
+
   }
   .about-strength .strength__item {
     display: block;
@@ -1111,13 +1111,15 @@ footer {
   }
   .skill__item-detail img{
     width: 50px;
-  }}
+  }
+}
 
 /* ===== worksページ ===== */
 
 .works-page {
   margin-bottom: 130px;
   position: relative;
+  margin-top: -30px; 
 }
 .works-page h1 {
   font-size: 100px;
@@ -1136,7 +1138,7 @@ footer {
   z-index: 2;
 }
 .works-page .works__item:first-child {
-  top: 15%;
+  top: 25%;
   right: 10%;
   animation: floating-y 3s ease-in-out infinite alternate-reverse;
 }
@@ -1172,6 +1174,7 @@ h1{
   font-weight: 400;
   text-align: center;
   line-height: 300px;
+  
 }
 
 h2{
@@ -1284,9 +1287,7 @@ h2{
   width: 50%;
   height: auto; /* 高さを自動調整してアスペクト比を保持 */
 }
-}}
-
-
+}
   
 /* ===== contactページ ===== */
 
@@ -1319,6 +1320,9 @@ label:not(:last-child) {
   padding: 0 3%;
 }
 @media screen and (max-width: 480px) {
+  h1{
+    font-size: 50px;
+  }
   .Form {
     margin-top: 40px;
   }
@@ -1448,8 +1452,8 @@ label:not(:last-child) {
 }
 
 @media screen and (max-width: 767px) {
-  .h1 {
-    font-size: 50px;
+   h1 {
+    font-size: 70px;
     margin: auto;
   }
 }
@@ -1506,4 +1510,4 @@ h4 {
 }
 
 @media screen and (max-width: 767px) {
-}}}
+}
