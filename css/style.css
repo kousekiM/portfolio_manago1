@@ -996,6 +996,7 @@ footer {
   }
 }
 /* skill */
+
 .about-skill {
   max-width: 1000px;
   margin: 400px auto 0;
@@ -1110,9 +1111,10 @@ footer {
   }
   .skill__item-detail img{
     width: 50px;
-  }
+  }}
 
 /* ===== worksページ ===== */
+
 .works-page {
   margin-bottom: 130px;
   position: relative;
@@ -1279,14 +1281,15 @@ h2{
   font-weight: bold;
 }
 .work_banner img {
-  width: 80%;
+  width: 50%;
   height: auto; /* 高さを自動調整してアスペクト比を保持 */
 }
-
+}}
 
 
   
 /* ===== contactページ ===== */
+
 h1 {
   font-size: 100px;
   color: #31355d;
@@ -1296,13 +1299,6 @@ h1 {
   justify-content: center; /* 横方向の中央揃え */
   align-items: center; /* 縦方向の中央揃え */
 }
-/* 画面幅が768px以下の場合 */
-@media screen and (max-width: 768px) {
-  h1 {
-    font-size: 60px; /* フォントサイズを60pxに変更 */
-  }
-}
-
 p {
   text-align: center;
 }
@@ -1420,12 +1416,13 @@ label:not(:last-child) {
   .Form-Item-Textarea {
     margin-top: 18px;
     margin-left: 0;
-    height: 2s00px;
+    height: 200px;
     flex: inherit;
     font-size: 15px;
   }
 }
 .Form-Btn {
+  border: 1px solid #ddd;
   border-radius: 25px;
   margin-top: 32px;
   margin-left: auto;
@@ -1451,11 +1448,13 @@ label:not(:last-child) {
 }
 
 @media screen and (max-width: 767px) {
-  .contact-form h1 {
+  .h1 {
     font-size: 50px;
-    margin: 50px auto;
+    margin: auto;
   }
 }
+
+
 
 /* ===== thank youページ ===== */
 .thanks_nav-item a {
@@ -1507,5 +1506,4 @@ h4 {
 }
 
 @media screen and (max-width: 767px) {
-}
-}
+}}}
