@@ -1174,11 +1174,10 @@ h1{
   font-weight: 400;
   text-align: center;
   line-height: 300px;
-  
 }
 
 h2{
-  font-size: 100px;
+  font-size: 80px;
   color: #31355d;
   font-family: heisei-maru-gothic-std, sans-serif;
   font-style: normal;
@@ -1202,7 +1201,7 @@ h2{
   font-weight: bold;
 }
 .work_banner img {
-  width: 80%;
+  width: 50%;
   height: auto; /* 高さを自動調整してアスペクト比を保持 */
   text-align: center;
 }
