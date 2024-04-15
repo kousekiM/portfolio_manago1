@@ -1456,6 +1456,7 @@ label:not(:last-child) {
    h1 {
     font-size: 70px;
     margin: auto;
+    text-align: center;
   }
 }
 
