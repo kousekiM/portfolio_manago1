@@ -1285,7 +1285,7 @@ h2{
   font-weight: bold;
 }
 .work_banner img {
-  width: 50%;
+  width: 80%;
   height: auto; /* 高さを自動調整してアスペクト比を保持 */
 }
 }
